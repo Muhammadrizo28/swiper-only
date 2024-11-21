@@ -1,0 +1,265 @@
+
+.circle-swiper {
+
+    display: none;
+}
+
+
+@media (min-width : 1440px) {
+
+    .circle-swiper {
+
+        display: block;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border: 1px solid rgba(66, 86, 122, 0.5);
+        border-radius: 50%;
+        z-index: 3;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        
+    }
+
+}
+
+.circleLine {
+
+    width: calc(100% + 50px);
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+
+.dote {
+
+    width: 6px;
+    height: 6px;
+    background: rgba(66, 86, 122, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-left: 22px;
+    
+ 
+    &:hover {
+
+        animation: bigDote 0.5s forwards;
+
+        & {
+            span {
+                display: block;
+            }
+        }
+    }
+
+    
+    span {
+        display: none;
+    }
+
+}
+
+.dote2 {
+
+    width: 6px;
+    height: 6px;
+    background: rgba(66, 86, 122, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-right: 22px;
+
+ 
+
+
+    span {
+        display: none;
+    }
+
+    &:hover {
+
+        animation: bigDote 0.5s forwards;
+
+        & {
+            span {
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+
+@keyframes bigDote {
+
+    from {
+        width: 6px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(66, 86, 122, 1);
+        border-radius: 50%;
+
+    }
+
+    to {
+        
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid rgba(48, 62, 88, 0.5);
+        background-color: transparent;
+        border-radius: 50%;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
+
+.smallDoteAnim {
+
+    animation: smallDote 0.5s forwards;
+  
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-left: 22px;
+
+    span {
+        display: none;
+    }
+
+}
+
+.smallDoteAnim2 {
+
+    animation: smallDote2 0.5s forwards;
+ 
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-right: 22px;
+
+    span {
+        display: none;
+    }
+
+}
+
+
+
+@keyframes smallDote {
+
+    from {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(48, 62, 88, 0.5);
+        border-radius: 50%;
+        margin: 0;
+
+    }
+
+    to {
+        
+        width: 6px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: rgba(66, 86, 122, 1);
+      
+        border-radius: 50%;
+        margin-left: 22px;
+   
+
+    }
+}
+
+
+
+@keyframes smallDote2 {
+
+    from {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(48, 62, 88, 0.5);
+        border-radius: 50%;
+        margin: 0;
+
+    }
+
+    to {
+        
+        width: 6px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: rgba(66, 86, 122, 1);
+        border-radius: 50%;
+        margin-right: 22px;
+   
+
+        
+    }
+}
+
+.active {
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(48, 62, 88, 0.5);
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0;
+
+    span {
+        display: block;
+    }
+
+    &:hover {
+
+        animation: none
+
+    }
+
+}
+
+
+

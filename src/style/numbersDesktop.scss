@@ -1,0 +1,70 @@
+
+
+
+.numbersTitle_container2 {
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    
+
+}
+
+.numbers_container2 {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.event_titleBox2 {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(56, 56, 56);
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+
+.left_year2 {
+
+    color: rgba(56, 119, 238, 1);
+    font-size: 136px;
+    z-index: 2;
+
+}
+
+.right_year2 {
+
+    color: violet;
+    font-size: 136px;
+    z-index: 2;
+
+}
+
+.numbers_line2 {
+
+    width: 150%;
+    height: 1px;
+    background-color:  rgba(66, 86, 122, 0.3);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+
+

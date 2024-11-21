@@ -1,0 +1,106 @@
+
+.numbersTitle_container {
+
+    width: 90%;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+
+
+}
+
+.numbers_container {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.event_titleBox {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(56, 56, 56);
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+
+.left_year {
+
+    color: rgba(56, 119, 238, 1);
+    font-size: 56px;
+
+}
+
+.right_year {
+
+    color: violet;
+    font-size: 56px;
+
+}
+
+.numbers_line {
+
+    display: none;
+}
+
+
+@media (min-width : 1440px) {
+
+    .event_titleBox {
+
+        display: none;
+    }
+
+    .numbersTitle_container {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 10%;
+       
+    }
+
+    .numbers_container {
+
+        height: 100%;
+        width: 60%;
+        z-index: 1;
+
+    }
+
+    .left_year {
+        font-size: 120px;
+    }
+
+    .right_year {
+
+        font-size: 120px;
+    }
+
+    .numbers_line {
+
+        display: block;
+        position: absolute;
+        top: 55%;
+        z-index: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(66, 86, 122, 1);
+    }
+}
+

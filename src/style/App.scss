@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+h1, h3, h4, span {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+
+
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+
+header {
+
+    width: 100%;
+    height: fit-content;
+    margin-top: 59px;
+
+
+    h1 {
+        font-size: 20px;
+        color: rgba(66, 86, 122, 1);
+        width: 123px;
+        height: 48px;
+        margin-left: 20px;
+    }
+
+
+    
+}
+
+.line {
+
+    width: 90%;
+    height: 2px;
+    background-color: rgba(199, 205, 217, 1);
+}
+
+.circle_numbersContainer {
+
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    h3 {
+        position: absolute;
+        right: 24%;
+        top: 26%;
+    }
+}
+
+
+
+
+@media (min-width : 1440px) {
+
+    .line {
+        width: 1px;
+        height: 100%;
+        background-color: rgba(66, 86, 122, 0.3);
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .container {
+
+        width: 75vw;
+        height: 100vh;
+        margin-left: 18vw;
+        border: 1px solid rgba(66, 86, 122, 1);
+        border-width: 0 1px 0 1px; 
+    }
+
+    header {
+        height: 110px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        
+        border-left: 5px solid transparent;
+        border-image: linear-gradient(180deg, #3877EE -5%, #EF5DA8 85%) 1;
+
+        h1 {
+            font-size: 45px;
+            height: fit-content;
+            margin-left: 78px;
+        }
+
+
+    
+       
+
+       
+    }
+    
+}
+
